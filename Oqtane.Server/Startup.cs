@@ -221,11 +221,13 @@ namespace Oqtane
                 .AddNewtonsoftJson()
                 .AddOqtaneApplicationParts() // register any Controllers from custom modules
                 .ConfigureOqtaneMvc(); // any additional configuration from IStart classes.
+            services.AddSignalR().AddAzureSignalR();
 
             if (_useSwagger)
             {
                 services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "Oqtane", Version = "v1"}); });
             }
+            services.AddApplicationInsightsTelemetry(Configuration["APPINSIGHTS_CONNECTIONSTRING"]);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
