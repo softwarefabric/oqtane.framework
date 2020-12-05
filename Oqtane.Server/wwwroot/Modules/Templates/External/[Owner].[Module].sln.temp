@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "[Owner].[Module].Server", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "[Owner].[Module].Shared", "Shared\[Owner].[Module].Shared.csproj", "{18D73F73-D7BE-4388-85BA-FBD9AC96FCA2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "[Owner].[Module].Package", "Package\[Owner].[Module].Package.csproj", "{C5CE512D-CBB7-4545-AF0F-9B6591A0C3A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "[Owner].[Module].Package", "Package\[Owner].[Module].Package.csproj", "{C5CE512D-CBB7-4545-AF0F-9B6591A0C3A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
